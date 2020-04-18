@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">WordsRandomnizaTHOR</string>
+    <!--ACTIVITY MAIN-->
+    <string name="insert">INSERTAR PALABRAS</string>
+    <string name="obtain">OBTENER PALABRAS</string>
+    <string name="listCreate">CREAR LISTADO DE PALABRAS</string>
+
+    <!--ObenerPalabrasActivity-->
+    <string name="numPalabras">Número de palabras:</string>
+    <string name="tipoPalabras">Tipo de palabras:</string>
+    <string name="aplicarFiltro">APLICAR\n FILTRO</string>
+
+    <!--Obtener Palabras Activity-->
+    <string name="titleInsert">INSERTE LAS PALABRAS</string>
+    <string name="descInsert">Cada palabra irá separada por una coma</string>
+    <string name="listInit">LISTADO DE PALABRAS:</string>
+    <string name="listFinal">LISTADO ALEATORIO:</string>
 </resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.ObtenerPalabrasActivity"
+    android:weightSum="4">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="1.50"
+        android:layout_height="0dp"
+        android:text="@string/aplicarFiltro"
+        android:background="@drawable/valkititle2"
+        style="@style/butonfont"
+        android:gravity="center_vertical"
+        android:textSize="25sp"/>
+
+    <!--Engloba a ambas opciones-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!--Opción núm Palabras-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="6dp"
+            android:weightSum="2"
+            android:background="@color/lightBeige"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/numPalabras"
+                style="@style/labelfont"
+                android:textSize="20sp"/>
+
+            <Spinner
+                android:id="@+id/spinerNum"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                style="@style/labelfont"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <!--Opción filtro-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="6dp"
+            android:weightSum="2"
+            android:background="@color/lightBeige">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/tipoPalabras"
+                style="@style/labelfont"
+                android:textSize="20sp"/>
+
+            <Spinner
+                android:id="@+id/spinerTipo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                style="@style/labelfont"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnObtenerPalab"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.20"
+        android:text="@string/obtain"
+        android:background="@drawable/buttonbck"
+        android:textSize="16sp"
+        style="@style/butonfont"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:id="@+id/resultPalabras"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.15"
+        android:background="@color/lightBeige"
+        android:textSize="16sp"
+        style="@style/labelfont"
+        android:layout_margin="8dp"/>
+
+</LinearLayout>
